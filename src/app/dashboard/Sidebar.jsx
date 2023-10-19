@@ -25,7 +25,7 @@ const Sidebar = () => {
             <h2 className="text-3xl font-semibold text-red-500 mb-3">Next Hero</h2>
             <ul>
                 {navLinks.map(({ path, title }) =>
-                    <li className="text-lg font-semibold mb-4" key={path}>
+                    <li className="text-lg font-semibold mb-2" key={path}>
                         <NavLink exact activeClassName="text-blue-500" href={path}>{title}</NavLink>
                     </li>
                 )}
